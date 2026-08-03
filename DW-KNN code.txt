@@ -1,0 +1,57 @@
+from sklearn.neighbors import KNeighborsClassifier
+
+def train_full_rgb_model(X, y, model_out='milk_mbrt_full_knn.joblib'):
+
+    X_tr, X_te, y_tr, y_te = train_test_split(
+        X, y,
+        test_size=0.2,
+        stratify=y,
+        random_state=42
+    )
+
+    pipe = Pipeline([
+        ('scaler', StandardScaler()),
+        ('knn', KNeighborsClassifier(
+            n_neighbors=5,
+            weights='distance',
+            metric='minkowski',
+            p=2
+        ))
+    ])
+
+    pipe.fit(X_tr, y_tr)
+
+    y_pr = pipe.predict(X_te)
+
+    acc = accuracy_score(y_te, y_pr)
+    print(f"\nAccuracy: {acc:.4f}")
+
+    cm = confusion_matrix(y_te, y_pr)
+
+    classes_present = np.unique(y_te)
+    target_names_present = [INV_LABEL_MAP[i] for i in classes_present]
+
+    plt.figure(figsize=(6,5))
+    sns.heatmap(cm,
+                annot=True,
+                fmt='d',
+                xticklabels=target_names_present,
+                yticklabels=target_names_present,
+                cmap='Blues')
+    plt.xlabel("Predicted")
+    plt.ylabel("Actual")
+    plt.title("DW-KNN Confusion Matrix")
+    plt.show()
+
+    print(classification_report(
+        y_te,
+        y_pr,
+        labels=classes_present,
+        target_names=target_names_present
+    ))
+
+    joblib.dump(pipe, model_out)
+
+    print(f"Saved model → {model_out}")
+
+    return pipe
