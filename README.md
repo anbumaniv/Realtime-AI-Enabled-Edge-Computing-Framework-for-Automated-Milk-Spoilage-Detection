@@ -1,4 +1,5 @@
 AI-Enabled MBRT System for Rapid Microbial Detection in Milk
+
 📌 Overview
 
 Milk is one of the most widely consumed food products, but it is highly susceptible to microbial contamination during collection, transportation, and storage. Conventional microbial quality assessment methods are often labor-intensive, time-consuming, and dependent on manual observation, making them unsuitable for continuous real-time monitoring.
@@ -30,6 +31,7 @@ Traditionally, this colour transition is monitored manually, making the process 
 The proposed system automates this entire workflow by combining image acquisition, feature extraction, and machine learning.
 
 ⚙️ System Workflow
+
 
 The complete system consists of the following stages:
 
