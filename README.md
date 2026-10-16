@@ -1,6 +1,6 @@
 AI-Enabled MBRT System for Rapid Microbial Detection in Milk
 
-📌 Overview
+📌 Overview:
 
 Milk is one of the most widely consumed food products, but it is highly susceptible to microbial contamination during collection, transportation, and storage. Conventional microbial quality assessment methods are often labor-intensive, time-consuming, and dependent on manual observation, making them unsuitable for continuous real-time monitoring.
 
@@ -8,7 +8,7 @@ This project presents an AI-enabled Milk Quality Assessment System that automate
 
 By integrating embedded hardware, image processing, and artificial intelligence, the system provides a fast, reliable, low-cost, and scalable solution for real-time microbial detection in dairy applications.
 
-🚀 Project Highlights
+🚀 Project Highlights:
 
 🥛 Automated Methylene Blue Reduction Test (MBRT)
 🤖 AI-based milk spoilage classification
@@ -20,7 +20,7 @@ By integrating embedded hardware, image processing, and artificial intelligence,
 🌐 Real-time monitoring through a web dashboard
 ⚡ Fast inference suitable for industrial deployment
 
-📖 Background
+📖 Background:
 
 The Methylene Blue Reduction Test (MBRT) is a well-established biochemical method used to estimate microbial activity in milk.
 
@@ -32,7 +32,7 @@ Traditionally, this colour transition is monitored manually, making the process 
 
 The proposed system automates this entire workflow by combining image acquisition, feature extraction, and machine learning.
 
-⚙️ System Workflow
+⚙️ System Workflow:
 
 
 The complete system consists of the following stages:
@@ -161,7 +161,7 @@ User-friendly interaction
 
 This enables rapid decision-making for dairy operators.
 
-🛠 Hardware Components
+🛠 Hardware Components:
 
 Intel UP Xtreme Edge Computer
 ESP32-CAM
@@ -172,7 +172,8 @@ Nichrome Heating Element
 White LED Illumination
 Power Supply
 
-💻 Software Stack
+💻 Software Stack:
+
 Python 3.11
 OpenCV
 NumPy
@@ -182,14 +183,14 @@ Flask
 Gradio
 Ubuntu Linux
 
-📊 Machine Learning Models Evaluated
-Model	Purpose
+📊 Machine Learning Models Evaluated:
+
 Random Forest	Final deployment model
 Support Vector Machine	Performance comparison
 Distance-Weighted KNN	Baseline classifier
 XGBoost	Ensemble learning comparison
 
-📈 Performance Evaluation
+📈 Performance Evaluation:
 
 The models are evaluated using multiple performance metrics.
 
@@ -202,7 +203,7 @@ ROC-AUC
 
 Random Forest consistently demonstrated superior classification performance, robustness, and suitability for real-time edge deployment.
 
-🌍 Applications
+🌍 Applications:
 
 The proposed system can be deployed in
 
@@ -214,7 +215,8 @@ The proposed system can be deployed in
 📦 Supply Chain Monitoring
 🔬 Research Laboratories
 
-✨ Advantages
+✨ Advantages:
+
 Fully automated MBRT analysis
 Eliminates subjective manual inspection
 Real-time microbial quality assessment
@@ -224,7 +226,8 @@ Edge AI deployment with low latency
 Scalable for industrial applications
 Easy integration with IoT-based monitoring systems
 
-🔮 Future Enhancements
+🔮 Future Enhancements:
+
 Deep learning-based feature extraction
 Smartphone-based milk quality monitoring
 Cloud-enabled analytics dashboard
