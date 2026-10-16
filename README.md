@@ -9,6 +9,7 @@ This project presents an AI-enabled Milk Quality Assessment System that automate
 By integrating embedded hardware, image processing, and artificial intelligence, the system provides a fast, reliable, low-cost, and scalable solution for real-time microbial detection in dairy applications.
 
 🚀 Project Highlights
+
 🥛 Automated Methylene Blue Reduction Test (MBRT)
 🤖 AI-based milk spoilage classification
 📷 Real-time image acquisition using ESP32-CAM
@@ -18,6 +19,7 @@ By integrating embedded hardware, image processing, and artificial intelligence,
 💻 Edge deployment on Intel UP Xtreme
 🌐 Real-time monitoring through a web dashboard
 ⚡ Fast inference suitable for industrial deployment
+
 📖 Background
 
 The Methylene Blue Reduction Test (MBRT) is a well-established biochemical method used to estimate microbial activity in milk.
@@ -39,13 +41,10 @@ The complete system consists of the following stages:
 Milk samples are collected.
 Methylene Blue reagent is added.
 Samples are placed inside the incubation chamber.
-2. Temperature-Controlled Incubation
 
-A custom-designed heating circuit maintains the samples at
+3. Temperature-Controlled Incubation
 
-37°C
-
-using
+A custom-designed heating circuit maintains the samples at 37°C using
 
 ESP8266 Controller
 DS18B20 Temperature Sensor
@@ -102,6 +101,7 @@ Dataset split
 
 80% Training
 20% Testing
+
 6. Machine Learning Classification
 
 Four supervised learning algorithms are evaluated.
@@ -116,6 +116,7 @@ The classifiers predict one of three milk quality classes:
 🟢 Fresh
 🟡 Mildly Spoiled
 🔴 Spoiled
+
 7. Best Model Selection
 
 Performance is evaluated using
@@ -161,6 +162,7 @@ User-friendly interaction
 This enables rapid decision-making for dairy operators.
 
 🛠 Hardware Components
+
 Intel UP Xtreme Edge Computer
 ESP32-CAM
 ESP8266
@@ -169,6 +171,7 @@ Relay Module
 Nichrome Heating Element
 White LED Illumination
 Power Supply
+
 💻 Software Stack
 Python 3.11
 OpenCV
@@ -178,12 +181,14 @@ Scikit-learn
 Flask
 Gradio
 Ubuntu Linux
+
 📊 Machine Learning Models Evaluated
 Model	Purpose
 Random Forest	Final deployment model
 Support Vector Machine	Performance comparison
 Distance-Weighted KNN	Baseline classifier
 XGBoost	Ensemble learning comparison
+
 📈 Performance Evaluation
 
 The models are evaluated using multiple performance metrics.
@@ -208,6 +213,7 @@ The proposed system can be deployed in
 🏪 Cold Storage Facilities
 📦 Supply Chain Monitoring
 🔬 Research Laboratories
+
 ✨ Advantages
 Fully automated MBRT analysis
 Eliminates subjective manual inspection
@@ -217,6 +223,7 @@ High classification accuracy
 Edge AI deployment with low latency
 Scalable for industrial applications
 Easy integration with IoT-based monitoring systems
+
 🔮 Future Enhancements
 Deep learning-based feature extraction
 Smartphone-based milk quality monitoring
