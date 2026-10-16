@@ -10,15 +10,15 @@ By integrating embedded hardware, image processing, and artificial intelligence,
 
 🚀 Project Highlights:
 
-🥛 Automated Methylene Blue Reduction Test (MBRT)
-🤖 AI-based milk spoilage classification
-📷 Real-time image acquisition using ESP32-CAM
-🌡️ Automatic temperature control at 37°C
-🎨 RGB and temporal feature extraction
-🌲 Random Forest-based microbial classification
-💻 Edge deployment on Intel UP Xtreme
-🌐 Real-time monitoring through a web dashboard
-⚡ Fast inference suitable for industrial deployment
+🥛 Automated Methylene Blue Reduction Test (MBRT),
+🤖 AI-based milk spoilage classification,
+📷 Real-time image acquisition using ESP32-CAM,
+🌡️ Automatic temperature control at 37°C,
+🎨 RGB and temporal feature extraction,
+🌲 Random Forest-based microbial classification,
+💻 Edge deployment on Intel UP Xtreme,
+🌐 Real-time monitoring through a web dashboard,
+⚡ Fast inference suitable for industrial deployment.
 
 📖 Background:
 
@@ -46,10 +46,10 @@ Samples are placed inside the incubation chamber.
 
 A custom-designed heating circuit maintains the samples at 37°C using
 
-ESP8266 Controller
-DS18B20 Temperature Sensor
-Relay Driver
-Nichrome Heating Element
+ESP8266 Controller,
+DS18B20 Temperature Sensor,
+Relay Driver,
+Nichrome Heating Element.
 
 This ensures proper MBRT incubation conditions throughout the experiment.
 
@@ -59,10 +59,10 @@ An ESP32-CAM captures images of the milk samples at regular intervals throughout
 
 The imaging setup includes
 
-Uniform LED illumination
-Fixed camera position
-Controlled background
-Consistent Region of Interest (ROI)
+Uniform LED illumination,
+Fixed camera position,
+Controlled background,
+Consistent Region of Interest (ROI).
 
 This guarantees reliable colour measurement.
 
@@ -72,17 +72,17 @@ Each captured image undergoes image processing to obtain discriminative colour f
 
 Extracted features include
 
-RGB Features
-Mean Red
-Mean Green
-Mean Blue
-Temporal Features
-ΔR
-ΔG
-ΔB
-Rate of colour change
-Cumulative colour variation
-Time elapsed
+RGB Features,
+Mean Red,
+Mean Green,
+Mean Blue,
+Temporal Features,
+ΔR,
+ΔG,
+ΔB,
+Rate of colour change,
+Cumulative colour variation,
+Time elapsed.
 
 These features effectively characterize the microbial reduction process occurring during MBRT.
 
@@ -92,24 +92,24 @@ The extracted features are preprocessed before model training.
 
 Processing includes
 
-Min-Max normalization
-Label encoding
-Stratified train-test split
-Five-fold cross-validation
+Min-Max normalization,
+Label encoding,
+Stratified train-test split,
+Five-fold cross-validation,
 
-Dataset split
+Dataset split,
 
-80% Training
+80% Training,
 20% Testing
 
 6. Machine Learning Classification
 
 Four supervised learning algorithms are evaluated.
 
-Random Forest
-Support Vector Machine (SVM)
-Distance-Weighted K-Nearest Neighbour (DW-KNN)
-Extreme Gradient Boosting (XGBoost)
+Random Forest,
+Support Vector Machine (SVM),
+Distance-Weighted K-Nearest Neighbour (DW-KNN),
+Extreme Gradient Boosting (XGBoost).
 
 The classifiers predict one of three milk quality classes:
 
@@ -121,12 +121,12 @@ The classifiers predict one of three milk quality classes:
 
 Performance is evaluated using
 
-Accuracy
-Precision
-Recall
-Specificity
-F1-score
-ROC-AUC
+Accuracy,
+Precision,
+Recall,
+Specificity,
+F1-score,
+ROC-AUC.
 
 Among all evaluated models,
 
@@ -142,11 +142,11 @@ for real-time inference.
 
 The edge system performs
 
-Image acquisition
-ROI extraction
-Feature extraction
-Classification
-Result visualization
+Image acquisition,
+ROI extraction,
+Feature extraction,
+Classification,
+Result visualization.
 
 without requiring cloud connectivity.
 
@@ -154,52 +154,52 @@ without requiring cloud connectivity.
 
 Prediction results are displayed through a lightweight web interface, providing
 
-Predicted milk quality
-Real-time monitoring
-Easy visualization
-User-friendly interaction
+Predicted milk quality,
+Real-time monitoring,
+Easy visualization,
+User-friendly interaction.
 
 This enables rapid decision-making for dairy operators.
 
 🛠 Hardware Components:
 
-Intel UP Xtreme Edge Computer
-ESP32-CAM
-ESP8266
-DS18B20 Temperature Sensor
-Relay Module
-Nichrome Heating Element
-White LED Illumination
-Power Supply
+Intel UP Xtreme Edge Computer,
+ESP32-CAM,
+ESP8266,
+DS18B20 Temperature Sensor,
+Relay Module,
+Nichrome Heating Element,
+White LED Illumination,
+Power Supply.
 
 💻 Software Stack:
 
-Python 3.11
-OpenCV
-NumPy
-Pandas
-Scikit-learn
-Flask
-Gradio
-Ubuntu Linux
+Python 3.11,
+OpenCV,
+NumPy,
+Pandas,
+Scikit-learn,
+Flask,
+Gradio,
+Ubuntu Linux.
 
 📊 Machine Learning Models Evaluated:
 
-Random Forest	Final deployment model
-Support Vector Machine	Performance comparison
-Distance-Weighted KNN	Baseline classifier
-XGBoost	Ensemble learning comparison
+Random Forest	Final deployment model,
+Support Vector Machine	Performance comparison,
+Distance-Weighted KNN	Baseline classifier,
+XGBoost	Ensemble learning comparison.
 
 📈 Performance Evaluation:
 
 The models are evaluated using multiple performance metrics.
 
-Accuracy
-Precision
-Recall
-Specificity
-F1-score
-ROC-AUC
+Accuracy,
+Precision,
+Recall,
+Specificity,
+F1-score,
+ROC-AUC.
 
 Random Forest consistently demonstrated superior classification performance, robustness, and suitability for real-time edge deployment.
 
@@ -207,31 +207,31 @@ Random Forest consistently demonstrated superior classification performance, rob
 
 The proposed system can be deployed in
 
-🥛 Dairy Farms
-🏭 Milk Processing Industries
-🚛 Milk Collection Centres
-🧪 Food Quality Testing Laboratories
-🏪 Cold Storage Facilities
-📦 Supply Chain Monitoring
-🔬 Research Laboratories
+🥛 Dairy Farms,
+🏭 Milk Processing Industries,
+🚛 Milk Collection Centres,
+🧪 Food Quality Testing Laboratories,
+🏪 Cold Storage Facilities,
+📦 Supply Chain Monitoring,
+🔬 Research Laboratories.
 
 ✨ Advantages:
 
-Fully automated MBRT analysis
-Eliminates subjective manual inspection
-Real-time microbial quality assessment
-Low-cost embedded implementation
-High classification accuracy
-Edge AI deployment with low latency
-Scalable for industrial applications
-Easy integration with IoT-based monitoring systems
+Fully automated MBRT analysis,
+Eliminates subjective manual inspection,
+Real-time microbial quality assessment,
+Low-cost embedded implementation,
+High classification accuracy,
+Edge AI deployment with low latency,
+Scalable for industrial applications,
+Easy integration with IoT-based monitoring systems.
 
 🔮 Future Enhancements:
 
-Deep learning-based feature extraction
-Smartphone-based milk quality monitoring
-Cloud-enabled analytics dashboard
-Multi-parameter milk quality assessment
-Explainable AI (XAI) for prediction interpretation
-FPGA-based hardware acceleration for ultra-low latency inference
-Large-scale deployment in dairy supply chains
+Deep learning-based feature extraction,
+Smartphone-based milk quality monitoring,
+Cloud-enabled analytics dashboard,
+Multi-parameter milk quality assessment,
+Explainable AI (XAI) for prediction interpretation,
+FPGA-based hardware acceleration for ultra-low latency inference,
+Large-scale deployment in dairy supply chains.
